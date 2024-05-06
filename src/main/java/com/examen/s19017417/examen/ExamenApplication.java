@@ -36,6 +36,21 @@ public class ExamenApplication {
             }
 
         } while (opcion != 3);
+		scanner.close();
+    }
+
+   		 public static void mostrarTabla(int numero) {
+        System.out.println("Tabla de multiplicar del " + numero + ":");
+       	 for (int i = 1; i <= 10; i++) {
+      	      System.out.println(numero + " x " + i + " = " + (numero * i));
+     	   }
+   		 }
+
+    public static void mostrarTablasDelDosAlCinco() {
+        for (int i = 2; i <= 5; i++) {
+            mostrarTabla(i);
+            System.out.println(); // Agrega una línea en blanco entre cada tabla
+        }
 	}
 
 }
